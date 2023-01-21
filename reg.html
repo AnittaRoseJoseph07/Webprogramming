@@ -1,0 +1,73 @@
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<style>
+body
+{
+background-color:powderblue;
+}
+h2
+{
+color:yellow;
+}
+h1
+{
+color:red;
+}
+</style>
+<title>Registration Form</title>
+</head>
+<body >
+<form>
+<h1><center>HOTEL REGISTRATION FORM</center></h1>
+<p style = "color:#009900; font-size:20px;
+                font-style:italic; text-align:center;">
+            TAJ Hotel Registration
+        </p>
+<h2><u>Personal Information</u></h2>
+<label for="fname">First Name:</label>
+<input type="text" id="fname" name="fname"><br>
+<label for="lname">Last name:</label>
+<input type="text" id="fname" name="lname" ><br>
+<label for="title">Title/position:</label>
+<input type="text" id="title" name="title" ><br>
+<label for="address">Address:</label><br>
+<textarea name="message" rows="10" cols="10">
+</textarea><br>
+<label for="phone">Phone number:</label>
+<input type="number" id="phone" name="phone" ><br>
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email"><br>
+<label for="dob">Date of birth</label>
+<input type="date" id="dob" name="dob"><br>
+<label for="free">Gender:</label>
+<input type="radio" id="vechicle1" name="vechicle1" value="Female" >
+<label for="vechicle1">Female</label>
+<input type="radio" id="vechicle2" name="vechicle1" value="male">
+<label for="vechicle2">Male</label><br>
+<label for="country">Country</label>
+<input type="text" id="country" name="country"><br>
+<label for="room">Room Type:</label>
+<select id="room" name="room" >
+<option value="Standard Room">Standard Room</option>
+<option value="Family Room">Family Room</option>
+<option value="Private Room">Private room</option>
+<option value="Male Room">Male Room</option>
+<option value="Female Room">Female Room</option>
+</select><br>
+<label for="date">Date of Arrival</label>
+<input type="date" id="date" name="date">
+<input type="time" id="time" name="time"><br>
+<label for="da">Date of Depature</label>
+<input type="date" id="date" name="date">
+<input type="time" id="time" name="time">
+<br>
+<label for="free">Free Pickup:</label>
+<input type="radio" id="vechicle1" name="vechicle1" value="yes please.." >
+<label for="vechicle1">Yes please..</label>
+<input type="radio" id="vechicle2" name="vechicle1" value="No thanks">
+<label for="vechicle2">No thanks</label><br>
+<input type="checkbox" id="accept" name="accept" value="I accept all terms and conditions">
+<label for="accept">I accept all terms and conditions</label><br>
+<input type="submit" value="submit" onclick="alert('THANKYOU')"><br>
+</form>
