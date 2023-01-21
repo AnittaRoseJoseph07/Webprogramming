@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>
+form
+</title>
+<style>
+body{
+background-color:powderblue;
+}
+</style>
+</head>
+<body>
+<h1><b><u><center>Validation form<cemter></b></h1></u>
+<script>
+
+function validateform()
+{
+var x=document.myform.name.value;
+var y=document.myform.password.value;
+var z=document.myform.confirm.value;
+var w=document.myform.email.value;
+var atposition=w.indexOf("@");
+var dotposition=w.lastIndexOf(".");
+if(x==null||x=="")
+{
+alert("The name field shouldn't be blank");
+}
+else if(y.length<6)
+{
+alert("password contain atleast 6 characters");
+}
+else if(y!=z)
+{
+alert("password not matches");
+}
+else if((myform.gender[0].checked==false )&&( myform.gender[1].checked==false))
+{
+alert("please choose your gender");
+}
+else if(atposition<1||dotposition<atposition+2||dotposition+2>w.length)
+{
+alert("Enter avalid email address");
+}
+}
+</script>
+<form name="myform"onsubmit=validateform()>
+name:<input type="text"name="name"><br><br>
+password:<input type="password"name="password"><br><br>
+confirm password:<input type="password"name="confirm"><br><br>
+Gender:<input type="radio"name="gender"value="male">Male
+<input type="radio"name="gender"value="female">Female<br><br>
+email:<input type="text"name="email"><br><br>
+
+<input type="submit"value="Register">
+</form>
+</body>
